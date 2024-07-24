@@ -1,0 +1,170 @@
+.footer {
+  padding-top: 29px;
+  background: #e1ede6;
+  padding-bottom: 17px;
+
+  &__info-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 35px;
+  }
+
+  &__logoNav-wrapper {
+    display: flex;
+    width: 725px;
+    justify-content: space-between;
+  }
+
+  &__logo-title {
+    color: #598d66;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__workshop-telephone {
+    color: #2c2d35;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    transition: 0.5s;
+  }
+
+  &__workshop-telephone:hover {
+    color: #598d66;
+  }
+
+  &__workshop {
+    color: #86928b;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__nav {
+    max-width: 445px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list-item {
+    color: #86928b;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-top: 6px;
+    transition: 0.5s;
+  }
+
+  &__list-item:hover {
+    color: #598d66;
+  }
+
+  &__lists &__list-item:first-child {
+    font-size: 20px;
+    color: #2c2d35;
+    margin-top: 0;
+  }
+
+  &__lists &__list-item:first-child:hover {
+    color: #598d66;
+  }
+
+  &__contacts-icons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 132px;
+  }
+
+  &__contacts-icon {
+    transition: 0.5s;
+  }
+
+  &__contacts-icon:hover {
+    filter: invert(50%) sepia(21%) saturate(634%) hue-rotate(83deg)
+      brightness(95%) contrast(92%);
+  }
+
+  &__contacts-text {
+    margin-top: 10px;
+    color: #86928b;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+
+  @media screen and (min-width: 769px) {
+    &__iconsName-wrapper-mobile {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__logo-wrapper {
+      margin-bottom: 0;
+    }
+
+    &__logoNav-wrapper {
+      display: block;
+    }
+
+    &__logoText-wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    &__workshop-telephone {
+      margin-bottom: 8px;
+    }
+
+    &__nav {
+      max-width: 650px;
+      margin-top: 20px;
+    }
+
+    &__iconsName-wrapper {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    &__workshop {
+      font-size: 16px;
+    }
+
+    &__nav {
+      margin-top: 30px;
+    }
+
+    &__list-item {
+      font-size: 16px;
+    }
+
+    &__iconsName-wrapper-mobile {
+      display: none;
+    }
+
+    &__iconsName-wrapper-mobile510 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: space-around;
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 577px) {
+    &__iconsName-wrapper-mobile510 {
+      display: none;
+    }
+  }
+}

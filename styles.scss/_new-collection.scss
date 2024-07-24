@@ -1,0 +1,87 @@
+.new-collection {
+  background-image: url(../imgs/new-collection__imgs/new-collection__bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 0;
+  background-position: center;
+
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__logo-title {
+    width: 420px;
+    color: #f4f6f5;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 100%; /* 40px */
+  }
+
+  &__text {
+    width: 540px;
+    margin-top: 20px;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+  }
+
+  &__button {
+    margin-top: 60px;
+    width: 257px;
+    height: 65px;
+    color: #2c2d35;
+    font-size: 20px;
+    font-weight: 500;
+    background: #eedb6d;
+    transition: 0.5s;
+  }
+
+  &__button:hover {
+    background: #faeb97;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .new-collection {
+    background-image: url(../imgs/new-collection__imgs/tablet690.webp);
+
+    &__text {
+      width: 690px;
+    }
+
+    &__button {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .new-collection {
+      background-size: contain;
+
+      &__star {
+        width: 50px;
+        height: 50px;
+      }
+
+      &__logo-title {
+        max-width: 261px;
+        font-size: 24px;
+      }
+
+      &__text {
+        max-width: 510px;
+        font-size: 16px;
+      }
+      &__button {
+        width: 190px;
+        height: 50px;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
