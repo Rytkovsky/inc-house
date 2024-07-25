@@ -15,14 +15,9 @@
 
   &__logo-title {
     color: #598d66;
-    font-family: Raleway;
     font-size: 20px;
     font-weight: 700;
   }
-
-  // &__line510 {
-  //   display: none;
-  // }
 
   &__nav {
     display: flex;
@@ -35,6 +30,7 @@
   &__list {
     display: flex;
     width: 388px;
+    max-width: 100%;
     justify-content: space-between;
   }
 
@@ -53,6 +49,7 @@
     width: 22px;
     height: 22px;
     transition: 0.5s;
+    display: block;
   }
 
   &__icon-cart:hover {
@@ -60,18 +57,12 @@
       brightness(95%) contrast(92%);
   }
 
-  @media screen and (max-width: 768px) {
-    &__list {
-      width: 360px;
-    }
+  @media screen and (max-width: 915px) {
     &__list-item {
       font-size: 18px;
     }
-    &__nav {
-      max-width: 445px;
-    }
   }
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 709px) {
     &__wrapper {
       display: block;
     }
@@ -81,27 +72,71 @@
     }
 
     &__nav {
-      max-width: 510px;
+      max-width: 1000px;
+      justify-content: space-between;
+      width: 100%;
     }
 
     &__line510 {
       margin-bottom: 17px;
     }
+
+    &__line510-img {
+      width: 100%;
+    }
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 708px) {
     &__line510 {
       display: none;
     }
   }
 
-  @media screen and (max-width: 320px) {
-    &__line510 {
+  @media screen and (min-width: 421px) {
+    &__mobile-420 {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header {
+    padding: 0;
+
+    &__wrapper {
       display: none;
     }
 
-    
+    &__logo-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 17px 15px 16px;
+      background: #ffffff;
+    }
+
+    &__star {
+      max-width: 35px;
+      max-height: 35px;
+    }
+
+    &__logo {
+      color: #598d66;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    &__mobile-menu {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 16px 15px 16px;
+      background: #e1ede6;
+    }
+
+    &__mobile-icon {
+      display: block;
+    }
   }
-
-
 }

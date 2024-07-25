@@ -99,13 +99,18 @@
     line-height: 120%;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 916px) {
     &__iconsName-wrapper-mobile {
       display: none;
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 915px) {
+    &__logoNav-wrapper {
+      max-width: 2000px;
+      width: 100%;
+    }
+
     &__logo-wrapper {
       margin-bottom: 0;
     }
@@ -125,7 +130,7 @@
     }
 
     &__nav {
-      max-width: 650px;
+      max-width: 100%;
       margin-top: 20px;
     }
 
@@ -134,7 +139,7 @@
     }
   }
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 709px) {
     &__workshop {
       font-size: 16px;
     }
@@ -162,8 +167,85 @@
     }
   }
 
-  @media screen and (min-width: 577px) {
+  @media screen and (min-width: 708px) {
     &__iconsName-wrapper-mobile510 {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    &__info-wrapper {
+      display: none;
+    }
+    &__logo-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &__top-information {
+      width: 100%;
+      padding-right: 25px;
+      margin-top: 26px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__contact {
+      color: #2c2d35;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    &__text {
+      color: #86928b;
+      margin-top: 6px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 150%;
+    }
+
+    &__mid-information {
+      width: 100%;
+      padding-right: 33px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__mid-title {
+      color: #2c2d35;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    &__line-img {
+      width: 100%;
+    }
+
+    &__bottom-information {
+      margin-top: 20px;
+    }
+
+    &__bottom-icons {
+      padding: 0 72px 0;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__bottom-text {
+      color: #86928b;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 120%;
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 421px) {
+    &__mobile-420 {
       display: none;
     }
   }

@@ -1,5 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: Raleway, sans-serif;
 }
 
 .container {
@@ -7,13 +17,6 @@ html {
   padding: 0 40px;
   max-width: 1190px;
   width: 100%;
-  font-family: Raleway;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 ul,
@@ -49,4 +52,18 @@ h6,
 p {
   font-weight: 400;
   color: inherit;
+}
+
+.star {
+  width: 35px;
+  height: 35px;
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 420px;
+    width: 100%;
+  }
 }

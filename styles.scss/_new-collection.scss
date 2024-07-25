@@ -16,17 +16,15 @@
     color: #f4f6f5;
     font-size: 40px;
     font-weight: 500;
-    line-height: 100%; /* 40px */
   }
 
   &__text {
     width: 540px;
     margin-top: 20px;
     color: #fff;
-    font-family: Raleway;
     font-size: 18px;
     font-weight: 500;
-    line-height: 150%; /* 27px */
+    line-height: 150%;
   }
 
   &__button {
@@ -45,7 +43,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 915px) {
   .new-collection {
     background-image: url(../imgs/new-collection__imgs/tablet690.webp);
 
@@ -58,10 +56,8 @@
     }
   }
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 709px) {
     .new-collection {
-      background-size: contain;
-
       &__star {
         width: 50px;
         height: 50px;
@@ -73,7 +69,7 @@
       }
 
       &__text {
-        max-width: 510px;
+        max-width: 100%;
         font-size: 16px;
       }
       &__button {
@@ -81,6 +77,21 @@
         height: 50px;
         font-size: 18px;
         margin-top: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .new-collection {
+      &__logo-title {
+        max-width: 230px;
+        width: 100%;
+      }
+
+      &__text {
+        max-width: 290px;
+        width: 100%;
+        font-size: 16px;
       }
     }
   }

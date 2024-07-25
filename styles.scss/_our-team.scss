@@ -42,7 +42,7 @@
     height: 80px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 915px) {
     &__wrapper {
       display: block;
     }
@@ -66,11 +66,7 @@
     }
   }
 
-  @media screen and (max-width: 576px) {
-    & {
-      padding-top: 0;
-    }
-
+  @media screen and (max-width: 709px) {
     &__main-picture {
       max-width: 375px;
       max-height: 370px;
@@ -85,6 +81,17 @@
     &__text {
       font-size: 16px;
       margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    &__main-picture {
+      max-width: 234px;
+      max-height: 290px;
+    }
+
+    &__people {
+      gap: 20px;
     }
   }
 }
