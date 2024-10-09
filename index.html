@@ -10,6 +10,7 @@
       type="image/webp"
       href="./imgs/favicon/favicon.webp"
     />
+    <script type="module" src="script.js" defer></script>
   </head>
   <body>
     <!-- !!! HEADER !!! -->
@@ -84,6 +85,8 @@
       <!-- HEADER для мобильной 420 -->
     </header>
     <!-- !!! HEADER !!! -->
+
+    <!-- MAIN -->
     <main>
       <section class="about">
         <div class="container">
@@ -102,9 +105,7 @@
                 Высокое качество отрисовки на плотной бумаге или льняном холсте.
                 Редкие произведения, доступные цены.
               </p>
-              <a class="order-button" href="#reproductions" target="_blank"
-                >Продукция</a
-              >
+              <button class="order-button">Продукция</button>
             </div>
           </div>
         </div>
@@ -114,13 +115,17 @@
           <div class="reproductions__title-wrapper">
             <h2 class="reproductions__title">Репродукции</h2>
             <div class="reproductions__button-wrapper">
-              <button class="reproductions__button">Франция</button
-              ><button class="reproductions__button">Германия</button
-              ><button class="reproductions__button">Англия</button>
+              <button class="reproductions__button" id="france__button">
+                Франция</button
+              ><button class="reproductions__button" id="germany__button">
+                Германия</button
+              ><button class="reproductions__button" id="england__button">
+                Англия
+              </button>
             </div>
           </div>
-          <div class="reproductions__all-cards-wrapper">
-            <article class="reproductions__card">
+          <div class="reproductions__all-cards-wrapper" id="cards__wrapper">
+            <!-- <article class="reproductions__card">
               <img
                 class="reproductions__card-image"
                 src="./imgs/card__imgs/amur.webp"
@@ -198,7 +203,7 @@
               </p>
               <p class="reproductions__card-price">20 000 руб</p>
               <button class="order-button card__button">В корзину</button>
-            </article>
+            </article> -->
           </div>
         </div>
       </section>
@@ -268,6 +273,7 @@
         </div>
       </section>
       <!-- !!! OUR TEAM !!! -->
+      <!-- MAIN -->
     </main>
     <!-- !!!!!! FOOTER !!!!!! -->
     <footer class="footer">
